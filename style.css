@@ -1,0 +1,10 @@
+.posts__wrapper {
+  display: none;
+}
+.posts__wrapper.active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.post__container {
+  padding: 20px;
+}
