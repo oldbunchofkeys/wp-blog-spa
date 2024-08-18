@@ -19,7 +19,7 @@ function setInitialActiveContent() {
   });
 }
 function addTabsFunctionality(arr) {
-  document.querySelectorAll("button").forEach((button) => {
+  document.querySelectorAll(".tabs__wrapper nav button").forEach((button) => {
     button.addEventListener("click", () => {
       button.classList.remove("active");
       arr.forEach((item) => {
@@ -36,7 +36,7 @@ function addTabsFunctionality(arr) {
             post.classList.remove("active");
           });
           item.classList.add("active");
-          document.querySelectorAll("button").forEach((buttonItem) => {
+          document.querySelectorAll(".tabs__wrapper nav button").forEach((buttonItem) => {
             buttonItem.classList.remove("active");
           });
           button.classList.add("active");
